@@ -1,0 +1,146 @@
+body{
+    color: chocolate;
+    background-color: antiquewhite;
+    margin: 0px;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    background-color: bisque;
+}
+
+.nav-header-element{
+    padding: 10px ;
+    margin:10px 5px;
+}
+
+.nav-button{
+    height: 10px;
+    
+}
+
+#title{
+    width: 600px;
+    margin-right: 30px;
+    text-align: right;
+    padding-right: 60px;
+    letter-spacing: 2px;
+    font-style: oblique;
+}
+.couverture-header{
+    position: absolute;
+    width: 100%;
+    height:400px;
+}
+.slogan{
+    position: relative;
+    text-align: right;
+    color: coral;
+    padding-bottom: 30px;
+    top:-200px;
+}
+.section1{
+    position:relative;
+    top:-20px;
+}
+
+.categorie{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+h4{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:darkblue;
+}
+
+
+search-input{
+    display: inline-block;
+    width: 50px;
+    border-radius: 30%;
+}
+.profil{
+  background-color: brown;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  display: inline-block;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 350px;
+}
+.classe{
+  color: brown;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+a div{
+    
+}
+.a-propos{
+    color:darkgray;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    letter-spacing: 2px;
+   line-height: 0,8;
+    margin-bottom: 20px;
+}
+.article-item{
+    display: inline-block;
+    position: relative;
+    margin:-10px;
+    margin-top: 20px;    
+}
+.description-article{
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    background-color: brown;
+    border-radius: 10px;
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+.photo{
+   width: 300px;
+    height: 360px;
+}
+footer{
+    background-color: azure;
+    padding: 20px;
+}
+.send-mail{
+    text-align: center;
+}
+.footer{
+    display:flex;
+    justify-content: space-around;
+}
+.section-footer p{
+    font-size: 0.8em;
+    
+}
+.section-footer{
+    color: burlywood; 
+}
