@@ -1,25 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 body{
+    display: grid;
     color: chocolate;
     background-color: antiquewhite;
+    height: 100%;
     margin: 0px;
+    place-items: center;
+}
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.topnav {
+  overflow: hidden;
+  height: 100px;
+  background-image: linear-gradient(to left, grey, white);
+}
+.details{
+    padding-top: 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  font-size: 50px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.topnav .search-container {
+  float: right;
+  border-radius:10px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
     width: 100%;
-    background-color: bisque;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
 }
-
-.nav-header-element{
-    padding: 10px ;
-    margin:10px 5px;
-}
-
-.nav-button{
-    height: 10px;
-    
+hr{
+  color:burlywood;
+   margin-left: 100px; 
+   margin-right: 100px;
 }
 
 #title{
@@ -31,20 +102,26 @@ body{
     font-style: oblique;
 }
 .couverture-header{
+    opacity:0.5;
     position: absolute;
     width: 100%;
     height:400px;
 }
-.slogan{
-    position: relative;
-    text-align: right;
-    color: coral;
-    padding-bottom: 30px;
-    top:-200px;
-}
+.couverture-header:hover{
+    opacity:1.0;
+}   
 .section1{
     position:relative;
     top:-20px;
+}
+.slogan{
+  color:black;
+  position: relative;
+  top:-300px;
+  margin-right: 50px;
+  margin-left: auto;
+  width: 300px;
+  text-align: left;
 }
 
 .categorie{
@@ -58,23 +135,18 @@ h4{
     margin-top: 20px;
     color:darkblue;
 }
-
-
-search-input{
-    display: inline-block;
-    width: 50px;
-    border-radius: 30%;
-}
 .profil{
   background-color: brown;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  border-radius: 5px;
+  height: 40px;
 }
+
 
 .header{
     display: block;
@@ -89,9 +161,10 @@ search-input{
   text-decoration: none;
   text-align: center;
 }
-
-a div{
     
+.soratra{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .a-propos{
     color:darkgray;
@@ -102,11 +175,15 @@ a div{
    line-height: 0,8;
     margin-bottom: 20px;
 }
-.article-item{
-    display: inline-block;
+.article-item-one{
+    display: flex;
     position: relative;
-    margin:-10px;
-    margin-top: 20px;    
+    margin:10px;
+    margin-top: 20px;  
+    justify-content: space-between;  
+}
+.articles-item-content{
+  margin: 20px;
 }
 .description-article{
     color: white;
@@ -125,6 +202,7 @@ a div{
 .photo{
    width: 300px;
     height: 360px;
+    border-radius: 15px;
 }
 footer{
     background-color: azure;
