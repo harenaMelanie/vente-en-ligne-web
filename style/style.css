@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-body{
-    display: grid;
-    color: chocolate;
-    background-color: antiquewhite;
-    height: 100%;
-    margin: 0px;
-    place-items: center;
-}
 * {box-sizing: border-box;}
 
 body {
@@ -18,12 +10,11 @@ body {
 .topnav {
   overflow: hidden;
   height: 100px;
-  background-image: linear-gradient(to left, grey, white);
+  font-weight: 5px;
 }
 .details{
-    padding-top: 20px;
+  padding-top: 10px;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -40,7 +31,7 @@ body {
 }
 
 .topnav a.active {
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -126,8 +117,13 @@ hr{
 
 .categorie{
     text-align: center;
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.categorie-element{
+  text-align: center;
+  margin:20px;
+
 }
 h4{
     text-align: center;
@@ -167,7 +163,7 @@ h4{
   backdrop-filter: blur(10px);
 }
 .a-propos{
-    color:darkgray;
+    color:#3b3734;
     text-align: center;
     margin-left: 400px;
     margin-right: 400px;
@@ -178,47 +174,53 @@ h4{
 .article-item-one{
     display: flex;
     position: relative;
-    margin:10px;
     margin-top: 20px;  
-    justify-content: space-between;  
+    justify-content: center;
 }
-.articles-item-content{
+.articles-items-content{
   margin: 20px;
 }
+div.article{
+  backdrop-filter: blur(13px);
+}
 .description-article{
+    font-size: 15px;
     color: white;
     text-align: center;
     margin: auto;
     margin-bottom: 40px;
-    text-decoration: underline;
-    background-color: brown;
+    background-image: url('../images/back1.avif');
     border-radius: 10px;
-    width: 350px;
-    height: 100px;
-    padding: 20px;
+    width: 450px;
+    height: 102px;
+    padding: 24px;
     letter-spacing: 5px;
+    
 }
 
 .photo{
+   border-radius: 15px;
    width: 300px;
-    height: 360px;
-    border-radius: 15px;
+   height: auto;
+
 }
-footer{
-    background-color: azure;
-    padding: 20px;
+.footer-items{
+  display: flex;
+  justify-content: space-around;
 }
-.send-mail{
-    text-align: center;
+.send-email-content{
+  display: flex;
+  justify-content: center;
+  padding:10px;
+
 }
-.footer{
-    display:flex;
-    justify-content: space-around;
+.send-email-content button{
+  background-color: darkgoldenrod;
+  color: azure;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
 }
-.section-footer p{
-    font-size: 0.8em;
-    
-}
-.section-footer{
-    color: burlywood; 
+.send-email-content input{
+  width:300px;
 }
